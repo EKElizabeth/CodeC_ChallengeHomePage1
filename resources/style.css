@@ -1,0 +1,361 @@
+/*basic css styling*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-height: fit-content;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+    max-height: fit-content;
+    font-size: 16px;
+    color: #222211;
+    background-color: #ddddbb;
+}
+
+/*add margin to h1, h2 headings*/
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+/*remove the bullets from unordered list*/
+ul {
+    list-style-type: none;
+}
+
+/*style container - container in all the elements*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto; /* if you want it to be centered; 0 = top& bottom, auto=lef&right*/
+    padding: 0 30px; /* 0 = top & bottom; 30px = left & right */
+}
+
+/*style navbar*/
+.navbar {
+    height: 110px;
+    background-color: #cccc99;
+}
+
+/*Company name*/
+.navbar .logo {
+    border: solid 4px #222211;
+    box-shadow: #55552b -0.5em 0.5em 0.5em ;
+    background-color: #99994d;
+    font: x-large;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 5px;
+}
+
+/*navbar ul items style*/
+.navbar a {
+    color: #222211;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*hover color* - this placed below the navbar a*/
+.navbar a:hover {
+    color: #cc6600;
+}
+
+/*ul items moved to right*/
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 100%; /*to take up 100% of navbar height(100px) - will then center it */
+}
+
+/*display navbar items horizontally - make ul a flexbox*/
+.navbar ul {
+    display: flex;
+}
+
+/*navbar items styling */
+.navbar ul li {
+    margin-left: 20px; /* puts 20px between each li item */
+    background-color: #eeeedd;
+    border: solid #222211;
+    box-shadow: #55552b -0.5em 0.5em 0.5em ;
+    width: 100px;
+    text-align: center;
+}
+
+.header {
+    min-height: 500px; /* this is the height of the training programs&workshops and about us*/
+    
+}
+
+/*About us and training program*/
+.header .container {
+    display: flex;
+    align-items: center; /* center training and about-us after min-height specified - wont center without it*/
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 30px;
+    
+}
+
+
+/*training program*/
+.header .train-prog {
+    background-color: #eeeedd;
+    border: solid #222211;
+    box-shadow: #55552b -0.5em 0.5em 0.5em ;
+    flex-basis: 500px; /*size of training program*/
+    text-align: center;
+    line-height: 2.5em;
+    padding: 20px 0;
+    align-self: flex-end;
+    margin-top: 150px;
+    margin-left: -20px
+}
+
+/*style of images for workshop*/
+.img3 {
+    width: 100px;
+    height: 100px;
+}
+
+/*About Us - moved to position higher than training program*/
+.header .about-us {
+    background-color: #eeeedd;
+    border: solid #222211;
+    box-shadow: #55552b -0.5em 0.5em 0.5em ;
+    flex-basis: 400px; /*size of training program*/
+    text-align: center;
+    line-height: 2.5em;
+    align-self: flex-start;
+    margin-top: 50px;
+    padding: 20px 10px;
+}
+
+/*word in paragraph to be highlighted*/
+.span1 {
+    font-weight: bold;
+}
+
+/*optional - training illustration photos*/
+.section .container {
+    display: flex;
+    width: 600px;
+    background-color: #eeeedd;
+    border: solid #222211;
+    box-shadow: hsl(60, 33%, 25%) -0.5em 0.5em 0.5em ;
+    margin-left: 700px;
+    margin-top: -300px;
+}
+
+/*illustration photos*/
+.section .photos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+ }
+
+
+
+/*styling for images in illustration photographs*/
+.section img {
+    border: solid 4px #222211;
+    background-color: #f6f6ee;
+    padding: 1.5%;
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+/*our team* - horizontal center on main page*/
+.our-team .container {
+    display: flex;
+    width: 1000px;
+    background-color: #eeeedd;
+    border: solid #222211;
+    box-shadow: #55552b -0.5em 0.5em 0.5em ;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;;
+}
+
+/*our team -center*/
+.our-team .team-box {
+    display: flex;
+    align-items: center;
+}
+
+/*style our team images*/
+.our-team .img2 {
+    border: solid 4px #222211;
+    background-color: #f6f6ee;
+    padding: 1.5%;
+    margin: 15px;
+    width: 200px;
+    height: 210px;
+    text-align: center;
+}
+
+/*contact-us*/
+.contact-us .container {
+    display: flex;
+    background-color: #eeeedd;
+    border: solid #222211;
+    box-shadow: hsl(60, 33%, 25%) -0.5em 0.5em 0.5em ;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+/*ul for contact us*/
+.contact-us ul {
+    display: flex;
+    align-items: center;
+}
+
+/*contact us items*/
+.contact-us li {
+    align-self: center;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: baseline;
+}
+
+
+
+/*style footer - same color as navbar*/
+.footer {
+    height: 100px;
+    background-color: #cccc99;
+    text-align: center;
+    padding: 30px;
+}
+
+footer .container {
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+/*style for media only*/
+
+
+@media only screen and (max-width: 800px) {
+
+
+    /*style navbar - change background color for media query*/
+    .navbar {
+        background-color: #ddddbb;
+    }
+    
+    
+    /*Company name*/
+    .navbar .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    /*ul items - display in column*/
+   .navbar .container {
+        display: flex;
+        flex-flow: column;
+    }
+    
+    /*change navbar display to column*/
+    .navbar ul {
+        display: flex;
+        flex-flow: column;
+    }
+    
+    /*navbar items - added margin around after converting to column */
+    .navbar ul li {
+        margin: 1rem;
+    }
+    
+    .header .container {
+        display: flex;
+        flex-flow: column;
+    }
+    
+    .header .train-prog {
+        width: auto;
+        height: auto;
+        margin: auto;
+        padding: 1em;
+    }
+          
+    /*reverse order of about us and training after converting to columns*/ 
+    .header .about-us {
+        order: -1;
+        margin: auto;
+        margin-top: 22rem;
+    }
+  
+    .section .container {
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        width: auto;
+        height: auto;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .section .photos {
+        display: flex;
+        flex-flow: column;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+   
+    .our-team .container {
+        display: flex;
+        flex-flow: column;
+        width: auto;
+        height: auto;
+    }
+    
+    .our-team .team-box {
+        display: flex;
+        flex-flow: column; 
+    }
+    
+    .contact-us .container {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+    
+    .contact-us ul {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .contact-us li {
+        text-align: center;
+    }
+    
+    .footer {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
